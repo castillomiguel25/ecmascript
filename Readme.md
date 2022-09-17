@@ -23,10 +23,9 @@ ECMAScript es la especificación del lenguaje propuesto por ECAM internacional u
     let guns = `${hello} ${world}` // Welcome to the jungle!
     ```
 
-    Let, const, multilínea, spread and destructuration
+   Let, const, multilínea, spread and destructuration
 
-    ```jsx
-let variable1; // Block scope
+    let variable1; // Block scope
 const constant1; // Block scope and constant
 const stringmultiline = `this is a multi
 line string`;
@@ -42,7 +41,6 @@ const object = {
 };
 
 const { name, age } = object; // 'manuel', 24
-```
 
 ## Arrow Functions, Promesas y Parámetros en objetos
 
