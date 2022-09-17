@@ -49,3 +49,62 @@ const { name, age } = object; // 'manuel', 24
     - `reject()` - comportamiento al fallar la promesa
     - `.then (⇒)` - obtener el valor del resolve
     - `.error(⇒)` - obtener el valor del reject()
+
+
+
+    - Arrow functions
+    
+    ```jsx
+    const myFunction = (params) => { ... };
+    const square = num => num * num; // returns num * num
+    ```
+
+    Clases
+
+    classmyClass {
+constructor(param1, param2) {
+this.param1 = param1;
+this.param2 = param2;
+	}
+
+	sum() {
+returnthis.param1 +this.param2
+	}
+}
+
+const calc =new myClass(2, 2);
+calc.sum(); // 4
+java
+
+
+
+Parámetros en objetos
+
+const name = 'manuel';
+const age = 24,
+const object = { name, age }; 
+// { name: 'manuel', age: 24 }
+
+
+Promesas
+const myPromise = () =>new Promise((resolve, reject) => {
+if (success) { // Make some logic to capture when the promise have success
+return resolve(succesfullResponse);
+	}
+return reject(failedResponse);
+}
+
+myPromise
+	.then(response => doSomething)
+	.catch(error => doSomethingWithError);
+
+    Módulos
+
+    // module.js
+const hello = () => console.log('Welcome to the jungle');
+
+exportdefault hello;
+
+// index.js
+import hellofrom './module.js';
+hello(); // 'Welcome to the jungle'
