@@ -6,105 +6,39 @@ ECMAScript
 
 ECMAScript es la especificación del lenguaje propuesto por ECAM internacional una institución encargada de los estándares. JS es el lenguaje que esta especificación usa para trabajar sobre las características que son añadidas año con año. Iniciando en el 2015 con la versión 6.
 
-
 ¿Qué se implementó en ES6?
 
 - Default params
-    
-    ```jsx
-    functionmyFunction(param1 = 'default', param2) { ... }
-    ```
-    
+  ```jsx
+  functionmyFunction(param1 = 'default', param2) { ... }
+  ```
 - Concatenación
-    
-    ```jsx
-    let hello = 'welcome';
-    let world = 'to the jungle!';
-    let guns = `${hello} ${world}` // Welcome to the jungle!
-    ```
 
-   Let, const, multilínea, spread and destructuration
+  ```jsx
+  let hello = "welcome";
+  let world = "to the jungle!";
+  let guns = `${hello} ${world}`; // Welcome to the jungle!
+  ```
 
-    let variable1; // Block scope
-const constant1; // Block scope and constant
-const stringmultiline = `this is a multi
-line string`;
-
-const array = ['item1', 'item2'];
-const array2 = ['item3', 'item4'];
-const allArrays = [...array, ...array2] // ['item1', 'item2' , 'item3', 'item4']
-
-const object = {
-	name: 'manuel',
-	age: 24,
-	country: 'PE',
-};
-
-const { name, age } = object; // 'manuel', 24
+- Let, const, multilínea, spread and destructuration
 
 ## Arrow Functions, Promesas y Parámetros en objetos
 
 - composicion - `newPromise()`
-    - `resolve()` - comportamiento al cumplir la promesa
-    - `reject()` - comportamiento al fallar la promesa
-    - `.then (⇒)` - obtener el valor del resolve
-    - `.error(⇒)` - obtener el valor del reject()
 
+  - `resolve()` - comportamiento al cumplir la promesa
+  - `reject()` - comportamiento al fallar la promesa
+  - `.then (⇒)` - obtener el valor del resolve
+  - `.error(⇒)` - obtener el valor del reject()
 
+  - Arrow functions
 
-    - Arrow functions
-    
-    ```jsx
-    const myFunction = (params) => { ... };
-    const square = num => num * num; // returns num * num
-    ```
+  - clases
 
-    Clases
+  - Parámetros en objetos
 
-    classmyClass {
-constructor(param1, param2) {
-this.param1 = param1;
-this.param2 = param2;
-	}
+  - Promesas
 
-	sum() {
-returnthis.param1 +this.param2
-	}
-}
+  - Generadores
 
-const calc =new myClass(2, 2);
-calc.sum(); // 4
-java
-
-
-
-Parámetros en objetos
-
-const name = 'manuel';
-const age = 24,
-const object = { name, age }; 
-// { name: 'manuel', age: 24 }
-
-
-Promesas
-const myPromise = () =>new Promise((resolve, reject) => {
-if (success) { // Make some logic to capture when the promise have success
-return resolve(succesfullResponse);
-	}
-return reject(failedResponse);
-}
-
-myPromise
-	.then(response => doSomething)
-	.catch(error => doSomethingWithError);
-
-    Módulos
-
-    // module.js
-const hello = () => console.log('Welcome to the jungle');
-
-exportdefault hello;
-
-// index.js
-import hellofrom './module.js';
-hello(); // 'Welcome to the jungle'
+  - Módulos
