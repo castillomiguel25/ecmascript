@@ -95,7 +95,7 @@ console.log(obj2)
 // ejemplo
 
 const namess = [
-    {name: 'miguel',age: 25},
+    {name: 'miguel', age: 25},
     {name: 'diunexy', age: 24}
 ]
 

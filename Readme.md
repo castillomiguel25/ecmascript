@@ -36,4 +36,55 @@ ECMAScript es la especificación del lenguaje propuesto por ECAM internacional u
   console.log(obj2)
   ```
 
+- arrow function 
+    ```jsx
+    const namess = [
+    {name: 'miguel', age: 25},
+    {name: 'diunexy', age: 24}
+    ]
 
+    let Listofname2 = namess.map(item => console.log(item.name))
+    ```
+
+
+- promesas
+      ```jsx
+      const helloPromises = () => {
+          return new Promise((resolve, reject) => {
+              if (true) {
+                  resolve('heyy')
+              }else {
+                  reject('problemaa')
+              }
+          });
+      }
+
+
+      helloPromises()
+          .then(response => console.log(response))
+          .catch(error => console.log(error))
+      ```
+
+-  class
+  ```jsx
+  class Calculator {
+  constructor() {
+  this.valueA = 0
+  this.valueB = 0
+  }
+        
+  suma(num1, num2){
+  this.valueA = num1
+  this.valueB = num2
+  return this.valueA + this.valueB
+  }
+    }
+    
+    // Instancia
+    const calc = new Calculator()
+    console.log(calc.suma(2,2))
+    ```
+
+
+- modulos import export
+    
