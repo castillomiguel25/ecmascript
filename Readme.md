@@ -20,25 +20,20 @@ ECMAScript es la especificación del lenguaje propuesto por ECAM internacional u
   let guns = `${hello} ${world}`; // Welcome to the jungle!
   ```
 
-- Let, const, multilínea, spread and destructuration
+- Let, const, multilínea 
 
-## Arrow Functions, Promesas y Parámetros en objetos
+- destructuration de elementos
 
-- composicion - `newPromise()`
+- operador de propagacion
 
-  - `resolve()` - comportamiento al cumplir la promesa
-  - `reject()` - comportamiento al fallar la promesa
-  - `.then (⇒)` - obtener el valor del resolve
-  - `.error(⇒)` - obtener el valor del reject()
+- propiedad de objeto mejorada
+ ```jsx
+  let names = 'miguel';
+  let ages = 25;
 
-  - Arrow functions
+  obj2 = {names, ages};
 
-  - clases
+  console.log(obj2)
+  ```
 
-  - Parámetros en objetos
 
-  - Promesas
-
-  - Generadores
-
-  - Módulos

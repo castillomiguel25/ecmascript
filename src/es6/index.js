@@ -20,7 +20,7 @@ function newFunction2(name = 'miguel', age = 25, country = 'venezuela' ) {
 newFunction2()
 newFunction2('castillo', '0', 'Ven');
 
-// ejemplo 2
+// ejemplo 2 template literals
 
 
 let hello = 'hello';
